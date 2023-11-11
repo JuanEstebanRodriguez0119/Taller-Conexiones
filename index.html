@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Comandos Git</title>
+    <link rel="shortcut icon" href="icono/Icono.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body id="cuerpo">
+    <div class="container-fluid bg-danger d-flex justify-content-center">
+      <p class="text-dark mb-2 p-2 fs-5">  <h4>  Systems news  </h4> </p>
+    </div>
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="text-dark fs-5 fw-bold"> Comandos en Git  </span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#que_es">Que es Git?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#origen"> Origen de Git </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cuales">Cuales son los comandos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#usos">Para que sirven?</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#ejm">Ejemplos de comandos </a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>                
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="que_es" class="w-100 mx-auto text-center">
+        <h3> Que es Git?</h3>
+        <hr>
+        <p class="uno" >
+          Git es, el sistema de control de versiones moderno más utilizado del mundo. Es un proyecto de código 
+          abierto maduro y con un mantenimiento activo desarrollado originalmente por Linus Torvalds, el famoso 
+          creador del kernel del sistema operativo Linux, en 2005. Un asombroso número de proyectos de software 
+          dependen de Git para el control de versiones, incluidos proyectos comerciales y de código abierto.
+          Los desarrolladores que han trabajado con Git cuentan con una buena representación en la base de 
+          talentos disponibles para el desarrollo de software, y este sistema funciona a la perfección en una 
+          amplia variedad de sistemas operativos e IDE (entornos de desarrollo integrados). Git, que presenta una 
+          arquitectura distribuida, es un ejemplo de DVCS (sistema de control de versiones distribuido, por sus 
+          siglas en inglés).  </p>
+    </section>
+    <hr>
+    <hr>
+    <section id="origen" class="w-100 mx-auto text-center">
+      <h3 class="text-danger"> Quien creo Git?</h3>
+      <hr>
+      <p >
+        La historia de Git se remonta a principios de la década de 2000. Fue creado por Linus Torvalds, el famoso 
+        desarrollador finlandés conocido por ser el creador del kernel de Linux. La necesidad de un sistema de 
+        control de versiones distribuido surgió cuando Torvalds y otros desarrolladores de Linux se encontraron con 
+        limitaciones en el sistema de control de versiones existente, llamado BitKeeper.
+      </p>
+    </section>
+    <hr>
+    <hr>
+    <div class="container-fluid">
+      <div class="row w-100 mx-auto">
+
+        <div class="col">
+          <div class="card" style="width: 22rem;">
+          <img src="img/linus.jpeg" alt="Linus_Torvalds" width="140" height="160">
+          <div class="card-body">
+            <h5 class="card-title">Linus Torvalds</h5>
+            <p class="card-text"> 1969 - ????  <br>
+              En 1991, Linus Torvalds lo diseñó y creó a modo de pasatiempo.</p>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/Linus_Torvalds" class="btn btn-danger">Mas informacion</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width:22rem;">
+          <img src="img/bitkeeper.jpeg" alt="BitKeeper" width="140" height="160">
+          <div class="card-body">
+            <h5 class="card-title">BitKeeper</h5>
+            <p class="card-text"> 2000s  <br>
+              Fue el sistema de control de versiones de Linux en aquella epoca de los 2000s</p>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/BitKeeper" class="btn btn-danger">Mas informacion</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <section id="cuales" class="w-50 mx-auto text-center">
+      <h3> Algunos Comandos y su funcionalidad </h3>
+      <hr>
+      <p >
+        En esta lista se encuentra unos de los comandos escenciales en Git=
+      </p>
+      <p>
+          * Git Checkout = Además de extraer las confirmaciones y las revisiones de archivos antiguos, git checkout también 
+            sirve para navegar por las ramas existentes. Combinado con los comandos básicos de Git, es una forma de trabajar 
+            en una línea de desarrollo concreta.
+      </p>
+
+      <p>
+          * Git Clean  = Elimina los archivos sin seguimiento de tu directorio de trabajo. Es la contraparte lógica de git reset, 
+            que normalmente solo funciona en archivos con seguimiento.
+      </p>
+
+      <p>
+          * Git Add = Mueve los cambios del directorio de trabajo al área del entorno de ensayo. Así puedes preparar una instantánea 
+            antes de confirmar en el historial oficial.
+      </p>
+
+      <p>
+          * Git commit = Confirma la instantánea preparada en el historial del proyecto. En combinación con git add, define 
+            el flujo de trabajo básico de todos los usuarios de Git.
+      </p>
+  </section>
+  <hr>
+  <hr>
+    <div id="carouselExampleInterval" class="carousel slide w-50 mx-auto text-center" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/git-1.jpeg" class="d-block w-100" alt="informacion">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/git-2.jpeg" class="d-block w-100" alt="Informacion animada">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/git-3.jpeg" class="d-block w-100" alt="transferencia de informacion ">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/git-4.jpeg" class="d-block w-100" alt="Informacion animada">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr>
+    <section id="caract" class="w-100 mx-auto text-center">
+      <h3> Cuales son sus caracteristicas?</h3>
+      <hr>
+      <p>
+        La teoria de la informacion plantea 5 cosas importantes, la fuente, tipos de fuente, mensaje, codigo e informacion.
+        La fuente es donde se puede enviar y recibir un tipo de mensaje, a su vez tambien hay tipos de fuentes las cuales si son
+        aleatorias no se pueden predecir sus mensajes.
+        Los mensajes son los que contienen la informacion ya sea mediante un archivo, simbolo, o codigo, este ultimo es el mas 
+        importante ya que puede ser un codigo binario el cual tiene un mensaje acorde a una cantidad de bits para representar 
+        dicho mensaje 
+      </p>
+    </section>
+  <hr>
+  <section id="ejm" class="w-100 mx-auto text-center">
+    <h3> Ejemplos en los sistemas</h3>
+    <hr>
+    <p>
+      Debido a sus amplios usos y gracias a sus componentes podemos usarla en la biologia, como el estudio de las secuencias en 
+      el ADN y su transcripcion a codigo genetico. La ingenieria electrica y los medios de comunicacion aplican la criptografia, 
+      mensajes, esteganografia y comprension de datos. Se puede ver de una manera mas practica al hacer pagos, transacciones o 
+      procesos de atentificacion o estadictica.
+    </p>
+  </section>
+  <hr>
+  <table style="border: 1px;">
+    <th width="200" > </th>
+    <th>
+        <img class="imagen" SRC = "img/adn.jpg">
+    </th>
+    <th width="100" > </th>
+    <th >
+        <img class="imagen" src="img/cripto.png">
+    </th>
+  </table>
+  <hr> 
+  <section id="conclusion" class="w-50 mx-auto text-center">
+  <h3> Conclusiones</h3>
+  <hr>
+  <p>
+    En conclusión, la teoría de la información es una herramienta fundamental en el campo de la comunicación y la ciencia 
+    de la información. Ha sido fundamental para el desarrollo de tecnologías de la información y las comunicaciones, como 
+    la compresión de datos y la codificación de señales, y ha tenido un impacto importante en una amplia gama de disciplinas. 
+    A medida que avanzamos, la comprensión y aplicación de los principios de la teoría de la información seguirá 
+    siendo esencial para optimizar la transmisión y el procesamiento de datos en nuestras vidas cotidianas.
+  </p>  
+  </section>
+  <hr>
+  <div id="juego" class="card text-center">
+    <div class="card-header">
+      Muchas Gracias!
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Retroalimentación</h5>
+      <p class="card-text">Para aplicar lo aprendido de una manera divertida</p>
+      <a target="_blank" href="https://wordwall.net/es/resource/59865513" class="btn btn-warning">Juego interactivo</a>
+    </div>
+    <div class="card-footer text-muted">
+      Juan Esteban Rodriguez Sarmiento <br>
+      Edwin Esteban Espejo Castañeda <br>
+    </div>
+  </div>
+
+  </body>
+</html>
